@@ -1,1 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
 
+#palabra {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+}
+
+#mensaje {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#letras {
+    display: grid;
+    grid-template-columns: repeat(9, 50px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.letra {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #000;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.letra.jugada {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.oculta {
+    visibility: hidden;
+}
+
+#ahorcado {
+    margin-top: 20px;
+}
+
+.letras-erradas {
+    margin-top: 20px;
+}
